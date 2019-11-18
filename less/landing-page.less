@@ -1,16 +1,46 @@
 .home{
-    .intro{
-        .heroimg{
-            width: 100%;
-            height: 500px;
-            // padding:20%;
-            background-position: 0px 0px;
-            background-size: cover;
-            background-image: url(/img/berlin-hero1.jpg);
-        
+    .heroimg{
+        width: 100%;
+        height: 50vh;
+        // background-attachment: fixed;
+        // padding:20%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/img/berlin-hero1.jpg);
+        display: flex;
+        align-items: center;
+             
+       
+    }
+
+    .herocont{
+        width: 35%;
+        .layout(@f-flow:column wrap, @j-content:flex-end, @a-items:center);
+        background-color: gray;
+        text-align: center;
+        margin: 50px;
+        margin-left: 60%;
+        .btn{
+            .custom-button();
         }
+    }
 
+    .content{
+        background-color: gray;
+        text-align: center;
+        padding-bottom: 50px;
+        .layout(@f-flow:row wrap, @j-content:center, @a-items:center);
+        margin: 0 auto;
+        width: 80%;
 
+        .content-section{
+            .layout(@f-flow:column wrap, @j-content:flex-end, @a-items:center);
+            width: 33%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid black;
+        }
+        
 
     }
 
