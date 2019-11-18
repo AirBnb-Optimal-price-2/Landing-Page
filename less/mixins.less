@@ -1,0 +1,32 @@
+.topcontainerparam(){
+    width: 100%;
+    margin: 0 auto; 
+}
+  
+  
+.padding(){
+      padding:15px;
+}
+  
+.custom-button(@bg-color:@btn-bg-color,@font-clr:white,@size:120px){
+    display:block;
+    background-color: @bg-color;
+    width: @size;
+    height: 35px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-clr; 
+}
+  
+.ftcont(){
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.layout(@f-flow:row wrap, @j-content:center, @a-items:center){
+    display:flex;
+    flex-flow:@f-flow;
+    justify-content: @j-content;
+    align-items:@a-items;
+}
