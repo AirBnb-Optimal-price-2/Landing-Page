@@ -171,3 +171,37 @@ nav {
     margin: 0 auto;
   }
 }
+.topsec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: gray;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+.topsec .title {
+  width: 50%;
+}
+.topsec .navcont {
+  width: 50%;
+  margin: 0 auto;
+}
+.topsec .navcont nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.topsec .navcont nav .btn {
+  display: block;
+  background-color: #22283A;
+  width: 120px;
+  height: 35px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 500px) {
+  .topsec .navcont nav {
+    width: 100%;
+  }
+}
