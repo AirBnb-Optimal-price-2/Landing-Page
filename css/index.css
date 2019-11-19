@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #dee2e6;
+  color: #0f1011;
 }
 h1,
 h2,
@@ -162,9 +162,16 @@ p {
   line-height: 1.4;
 }
 .container {
-  background-color: rgba(69, 74, 89, 0.85);
+  background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .topsec {
   display: flex;
@@ -185,6 +192,13 @@ p {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .topsec .navcont {
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+  }
+}
 .topsec .navcont nav {
   display: flex;
   justify-content: flex-end;
@@ -199,8 +213,8 @@ p {
   color: white;
 }
 @media (max-width: 500px) {
-  .topsec .navcont nav {
-    width: 100%;
+  .topsec .navcont nav .btn {
+    border-radius: 0px;
   }
 }
 .home .heroimg {
@@ -219,10 +233,15 @@ p {
   align-items: center;
   width: 35%;
   height: 50%;
-  background-color: rgba(69, 74, 89, 0.85);
+  background-color: rgba(241, 246, 255, 0.82);
   text-align: center;
   margin-left: 60%;
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .home .herocont {
+    width: auto;
+  }
 }
 .home .herocont .btn {
   display: block;
@@ -232,6 +251,11 @@ p {
   font-size: 2rem;
   border-radius: 10px;
   color: white;
+}
+@media (max-width: 500px) {
+  .home .herocont .btn {
+    border-radius: 0px;
+  }
 }
 .home .content {
   text-align: center;
@@ -260,4 +284,10 @@ p {
   padding-bottom: 4%;
   border-bottom: 2px solid black;
   margin: 2%;
+}
+@media (max-width: 500px) {
+  .home .content .content-section {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

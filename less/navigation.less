@@ -19,12 +19,18 @@
 
     .navcont{
         width: 50%;
-        margin: 0 auto;    
+        margin: 0 auto;
+        @media @phone{
+            align-items: center;
+            justify-content: flex-start;
+                width: auto;
+            }    
         
     
         nav{
             .btn{
                 .custom-button();
+                
             }
            
             
@@ -32,9 +38,9 @@
             display: flex;
             justify-content: flex-end;
     
-            @media @phone{
-                width: 100%;
-            }
+            // @media @phone{
+            //     width: 100%;
+            // }
             
         }//close nav
     
