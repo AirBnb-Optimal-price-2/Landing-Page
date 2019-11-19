@@ -162,6 +162,7 @@ p {
   line-height: 1.4;
 }
 .container {
+  background-color: rgba(69, 74, 89, 0.85);
   width: 100%;
   margin: 0 auto;
 }
@@ -169,8 +170,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgba(69, 74, 89, 0.55);
-  padding: 15px;
+  background-color: white;
+  padding: 9px;
   padding-left: 5%;
   padding-right: 5%;
   position: fixed ;
@@ -204,10 +205,11 @@ p {
 }
 .home .heroimg {
   width: 100%;
-  height: 60vh;
+  margin: 0 auto;
+  height: 70vh;
   background-position: center;
   background-size: cover;
-  background-image: url(/img/berlin-hero1.jpg);
+  background-image: url(/img/berlin-hero2.jpg);
   display: flex;
 }
 .home .herocont {
@@ -232,7 +234,6 @@ p {
   color: white;
 }
 .home .content {
-  background-color: #454A59;
   text-align: center;
   padding-bottom: 50px;
   display: flex;
@@ -240,11 +241,14 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
+  width: 85%;
 }
 .home .content h1 {
   width: 100%;
   padding-top: 4%;
+}
+.home .content h4 {
+  padding-bottom: 3%;
 }
 .home .content .content-section {
   display: flex;
