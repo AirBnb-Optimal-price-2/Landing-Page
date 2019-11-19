@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #dee2e6;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #072580;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  background-color: rgba(69, 74, 89, 0.85);
+  width: 100%;
+  margin: 0 auto;
+}
+.topsec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  padding: 9px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: fixed ;
+  width: 100%;
+  margin: 0 auto;
+}
+.topsec .title {
+  width: 50%;
+}
+.topsec .navcont {
+  width: 50%;
+  margin: 0 auto;
+}
+.topsec .navcont nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.topsec .navcont nav .btn {
+  display: block;
+  background-color: #db3742;
+  width: 120px;
+  height: 35px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 500px) {
+  .topsec .navcont nav {
+    width: 100%;
+  }
+}
+.home .heroimg {
+  width: 100%;
+  margin: 0 auto;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/berlin-hero2.jpg);
+  display: flex;
+}
+.home .herocont {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 50%;
+  background-color: rgba(69, 74, 89, 0.85);
+  text-align: center;
+  margin-left: 60%;
+  margin-top: 10%;
+}
+.home .herocont .btn {
+  display: block;
+  background-color: #db3742;
+  width: 120px;
+  height: 35px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.home .content {
+  text-align: center;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+}
+.home .content h1 {
+  width: 100%;
+  padding-top: 4%;
+}
+.home .content h4 {
+  padding-bottom: 3%;
+}
+.home .content .content-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 29%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-bottom: 2px solid black;
+  margin: 2%;
+}

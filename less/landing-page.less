@@ -1,0 +1,66 @@
+.home{
+    .heroimg{
+        
+        width: 100%;
+        
+        margin: 0 auto;
+        height: 70vh;
+        // background-attachment: fixed;
+        // padding:20%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/img/berlin-hero2.jpg);
+        display: flex;
+        // align-items: center;
+             
+       
+    }
+
+    .herocont{
+        .layout(@f-flow:column wrap, @j-content:center, @a-items:center);
+        width: 35%;
+        height: 50%;
+        background-color: fade(@river-bend, 85%);
+        text-align: center;
+        // margin: 50px;
+        margin-left: 60%;
+        margin-top: 10%;
+        .btn{
+            .custom-button();
+        }
+    }
+
+    .content {
+        // background-color: fade(@river-bend, 85%);
+        text-align: center;
+        padding-bottom: 50px;
+        .layout(@f-flow:row wrap, @j-content:center, @a-items:center);
+        margin: 0 auto;
+        width: 85%;
+
+        h1{
+            width: 100%;
+            padding-top: 4%;
+        }
+
+        h4{
+            padding-bottom: 3%;
+        }
+
+        .content-section{
+            .layout(@f-flow:column wrap, @j-content:flex-end, @a-items:center);
+            width: 29%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            border-bottom: 2px solid black;
+            margin: 2%;
+        }
+        
+
+    }
+
+
+
+
+
+}
