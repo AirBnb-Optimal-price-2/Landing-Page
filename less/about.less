@@ -1,44 +1,42 @@
 .about-heroimg{
         
+    background-image: url(/img/about-hero.jpg);
     width: 100%;
-    
     margin: 0 auto;
-    height: 100vh;
-    // background-attachment: fixed;
-    // padding:20%;
+    height: 85vh;
+    object-fit: cover;
     background-position: center;
     background-size: cover;
-    background-image: url(/img/berlin-hero2.jpg);
     display: flex;
-    // align-items: center;
-    @media @phone{
-        width: 100%; 
+   
+    @media @tablet{
+        background-position: right;
+
                
-      }
+      }//tablet close
     
-    .about-herocont{
-        .layout(@f-flow:column wrap, @j-content:center, @a-items:center);
-        width: 50%;
-        height: 55%;
-        // background-color: rgba(241, 246, 255, 0.82);
-        text-align: center;
-        // margin: 50px;
-        margin-left: 25%;
-        margin-top: 18%;
-        @media @phone{
-            width: 100%;
-            margin-left: 0;
-            margin-top: 25%; 
-    }
+    // .about-herocont{
+    //     .layout(@f-flow:column wrap, @j-content:center, @a-items:center);
+    //     width: 50%;
+    //     height: 55%;
+    //     // background-color: rgba(241, 246, 255, 0.82);
+    //     text-align: center;
+    //     // margin: 50px;
+    //     margin-left: 25%;
+    //     margin-top: 18%;
+    //     @media @phone{
+    //         width: 100%;
+    //         margin-left: 0;
+    //         margin-top: 25%; 
+    // }
          
    
+// }  hero cont close
 }
 
-.container {
-    // max-width: 900px;
-    background-color: red;
-
-    width: 100%;
+.about-container{
+    max-width: 900px;
+     width: 90%;
     margin: 0 auto; 
     
     @media @phone{
@@ -46,5 +44,80 @@
       // width: 80%;
       margin: 0 auto; 
      
+    }//close phone
+
+.about-content-section {
+    color: red;
+    .layout(@f-flow:row wrap, @j-content:flex-start, @a-items:center);
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    border-bottom: 2px solid black;
+    margin: 1%;
+
+    h4 {
+        padding-bottom: 2%;
     }
-};
+
+    p {
+        text-align: center;
+    }
+
+    .guest1{
+        border-radius: 40%;
+        margin-bottom: 5%;
+    }
+    @media @tablet{
+        width: 100%;
+        margin: 0 auto; 
+       
+      }
+           
+    @media @phone{
+        width: 100%;
+        margin: 0 auto; 
+       
+      }
+}
+.leadershipcont {
+    .layout(@f-flow:row wrap, @j-content:center, @a-items:center);
+    width: 100%;
+
+    img{
+        margin-left: 25%;
+    }
+   
+    
+    .leadership{
+        margin: 0 auto;
+        width: 45%;
+        margin: 5px;
+        border: 1px solid #ccc;
+        @media @phone{
+            width: 100%;
+            margin: 0 auto; 
+           
+          }
+        
+    }
+    div.leadership:hover {
+      border: 1px solid #777;
+    }
+    
+    div.leadership img {
+      width: 50%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+  }
+  
+  
+}
+
+
+
