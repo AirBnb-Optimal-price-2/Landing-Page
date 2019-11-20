@@ -228,11 +228,10 @@ p {
   }
 }
 footer {
-  max-width: 800px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   color: #22283B;
-  background: #f4f4f4;
+  background: white;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -396,7 +395,6 @@ footer {
   }
 }
 .about-container .about-content-section {
-  color: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -439,6 +437,9 @@ footer {
 .about-container .leadershipcont img {
   margin-left: 25%;
 }
+.about-container .leadershipcont .graybckrd {
+  background-color: rgba(15, 16, 17, 0.1);
+}
 .about-container .leadershipcont .leadership {
   margin: 0 auto;
   width: 45%;
@@ -446,6 +447,12 @@ footer {
   border: 1px solid #ccc;
 }
 @media (max-width: 500px) {
+  .about-container .leadershipcont .leadership {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 850px) {
   .about-container .leadershipcont .leadership {
     width: 100%;
     margin: 0 auto;

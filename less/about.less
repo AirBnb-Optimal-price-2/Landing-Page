@@ -47,7 +47,6 @@
     }//close phone
 
 .about-content-section {
-    color: red;
     .layout(@f-flow:row wrap, @j-content:flex-start, @a-items:center);
     width: 100%;
     padding-top: 3%;
@@ -61,6 +60,7 @@
 
     p {
         text-align: center;
+        
     }
 
     .guest1{
@@ -86,14 +86,23 @@
     img{
         margin-left: 25%;
     }
-   
+    .graybckrd {
+        background-color: fade(@river-bend, 10%);
+
+        }
     
     .leadership{
         margin: 0 auto;
         width: 45%;
         margin: 5px;
         border: 1px solid #ccc;
+        
         @media @phone{
+            width: 100%;
+            margin: 0 auto; 
+           
+          }
+          @media @tablet{
             width: 100%;
             margin: 0 auto; 
            
