@@ -48,12 +48,17 @@
         }
     }
     .cont-sec-two {
-        color: red;
+        // color: red;
     }
     .One {
         background-color: fade(@river-bend, 10%);
+        align-items: center;
         width: 100%;
             }
+    .two{
+        align-content: 0;
+        justify-content: space-evenly !important;
+    }
     .three{
          background-color: fade(@river-bend, 10%);
         }
@@ -62,7 +67,7 @@
         // background-color: fade(@river-bend, 85%);
         text-align: center;
         padding-bottom: 50px;
-        .layout(@f-flow:row wrap, @j-content:center, @a-items:center);
+        .layout(@f-flow:row wrap, @j-content:center, @a-items:0);
         margin: 0 auto;
 
      
@@ -94,12 +99,20 @@
             border-bottom: 2px solid black;
             margin: 1%;
 
-           
+            .flag{
+                display:inline;
+            }
 
-
-            
-
-
+            .guest1{
+                border-radius: 40%;
+                margin-bottom: 5%;
+            }
+            @media @tablet{
+                width: 100%;
+                margin: 0 auto; 
+               
+              }
+                   
             @media @phone{
                 width: 100%;
                 margin: 0 auto; 
