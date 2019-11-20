@@ -146,19 +146,26 @@ h5 {
   color: #072580;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
 }
 h2 {
+  padding-top: 3%;
   font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 .container {
@@ -168,8 +175,6 @@ p {
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 800px;
-    width: 80%;
     margin: 0 auto;
   }
 }
@@ -220,28 +225,40 @@ p {
 .home .heroimg {
   width: 100%;
   margin: 0 auto;
-  height: 70vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-image: url(/img/berlin-hero2.jpg);
   display: flex;
+}
+@media (max-width: 500px) {
+  .home .heroimg {
+    width: 100%;
+  }
 }
 .home .herocont {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 35%;
-  height: 50%;
-  background-color: rgba(241, 246, 255, 0.82);
+  width: 50%;
+  height: 55%;
   text-align: center;
-  margin-left: 60%;
-  margin-top: 10%;
+  margin-left: 25%;
+  margin-top: 18%;
 }
 @media (max-width: 500px) {
   .home .herocont {
-    width: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 25%;
   }
+}
+.home .herocont .Berlin {
+  color: whitesmoke;
+  font-size: 15rem;
+  font-family: 'Bree Serif', serif;
+  font-weight: 900;
 }
 .home .herocont .btn {
   display: block;
@@ -257,6 +274,16 @@ p {
     border-radius: 0px;
   }
 }
+.home .cont-sec-two {
+  color: red;
+}
+.home .One {
+  background-color: rgba(15, 16, 17, 0.1);
+  width: 100%;
+}
+.home .three {
+  background-color: rgba(15, 16, 17, 0.1);
+}
 .home .content {
   text-align: center;
   padding-bottom: 50px;
@@ -265,13 +292,18 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 85%;
+}
+.home .content .content-one-img {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .home .content h1 {
   width: 100%;
   padding-top: 4%;
 }
 .home .content h4 {
+  padding-top: 2%;
   padding-bottom: 3%;
 }
 .home .content .content-section {
@@ -280,10 +312,10 @@ p {
   justify-content: flex-end;
   align-items: center;
   width: 29%;
-  padding-top: 4%;
+  padding-top: 3%;
   padding-bottom: 4%;
   border-bottom: 2px solid black;
-  margin: 2%;
+  margin: 1%;
 }
 @media (max-width: 500px) {
   .home .content .content-section {
