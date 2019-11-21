@@ -472,6 +472,10 @@ footer {
     margin: 0 auto;
   }
 }
+.about-container .leadershipcont .leadership h5 {
+  font-size: 2.3rem;
+  color: black;
+}
 .about-container .leadershipcont div.leadership:hover {
   border: 1px solid #777;
 }
