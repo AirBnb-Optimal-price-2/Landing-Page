@@ -260,7 +260,7 @@ footer {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-image: url(/img/berlin-hero2.jpg);
+  background-image: url(img/berlin-hero2.jpg);
   display: flex;
 }
 @media (max-width: 500px) {
@@ -371,7 +371,7 @@ footer {
   }
 }
 .about-heroimg {
-  background-image: url(/img/about-hero.jpg);
+  background-image: url(img/about-hero.jpg);
   width: 100%;
   margin: 0 auto;
   height: 85vh;
