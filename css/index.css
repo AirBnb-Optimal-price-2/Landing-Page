@@ -216,7 +216,7 @@ p {
 .topsec .navcont nav .btn {
   display: block;
   background-color: #db3742;
-  width: 120px;
+  width: auto;
   height: 35px;
   font-size: 2rem;
   border-radius: 10px;
@@ -295,7 +295,7 @@ footer {
 .home .herocont .btn {
   display: block;
   background-color: #db3742;
-  width: 120px;
+  width: auto;
   height: 35px;
   font-size: 2rem;
   border-radius: 10px;
