@@ -395,6 +395,11 @@ footer {
     margin: 0 auto;
   }
 }
+@media (max-width: 850px) {
+  .about-container {
+    margin: 0 auto;
+  }
+}
 .about-container .about-content-section {
   display: flex;
   flex-flow: row wrap;
@@ -442,6 +447,9 @@ footer {
   background-color: rgba(15, 16, 17, 0.1);
 }
 .about-container .leadershipcont .leadership {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   height: 460.5px;
   width: 45%;
@@ -450,14 +458,16 @@ footer {
 }
 @media (max-width: 500px) {
   .about-container .leadershipcont .leadership {
-    height: 0 auto;
+    padding: 1%;
+    height: auto;
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (max-width: 850px) {
   .about-container .leadershipcont .leadership {
-    height: 0 auto;
+    padding: 1%;
+    height: auto;
     width: 100%;
     margin: 0 auto;
   }
