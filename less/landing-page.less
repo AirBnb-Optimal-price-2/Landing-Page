@@ -1,0 +1,130 @@
+.home{
+    .heroimg{
+        
+        width: 100%;
+        
+        margin: 0 auto;
+        height: 100vh;
+        // background-attachment: fixed;
+        // padding:20%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/img/berlin-hero2.jpg);
+        display: flex;
+        // align-items: center;
+        @media @phone{
+            width: 100%; 
+                   
+          }
+             
+       
+    }
+   
+
+
+    .herocont{
+        .layout(@f-flow:column wrap, @j-content:center, @a-items:center);
+        width: 50%;
+        height: 55%;
+        // background-color: rgba(241, 246, 255, 0.82);
+        text-align: center;
+        // margin: 50px;
+        margin-left: 25%;
+        margin-top: 18%;
+        @media @phone{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 25%; 
+           
+          }
+          .Berlin {
+              color:whitesmoke;
+              font-size: 15rem;
+              font-family: 'Bree Serif', serif;
+              font-weight: 900;
+          }
+        .btn{
+            .custom-button();
+        }
+    }
+    .cont-sec-two {
+        // color: red;
+    }
+    .One {
+        background-color: fade(@river-bend, 10%);
+        align-items: center;
+        width: 100%;
+            }
+    .two{
+        align-content: 0;
+        justify-content: space-evenly !important;
+    }
+    .three{
+         background-color: fade(@river-bend, 10%);
+        }
+
+    .content {
+        // background-color: fade(@river-bend, 85%);
+        text-align: center;
+        padding-bottom: 50px;
+        .layout(@f-flow:row wrap, @j-content:center, @a-items:0);
+        margin: 0 auto;
+
+     
+        
+        
+
+        .content-one-img{
+            padding-top: 2%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        h1{
+            width: 100%;
+            padding-top: 4%;
+        }
+
+        h4{
+            padding-top: 2%;
+            padding-bottom: 3%;
+        }
+
+        .content-section{
+            .layout(@f-flow:column wrap, @j-content:flex-end, @a-items:center);
+            width: 29%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            border-bottom: 2px solid black;
+            margin: 1%;
+
+            .flag{
+                display:inline;
+            }
+
+            .guest1{
+                border-radius: 40%;
+                margin-bottom: 5%;
+            }
+            @media @tablet{
+                width: 100%;
+                margin: 0 auto; 
+               
+              }
+                   
+            @media @phone{
+                width: 100%;
+                margin: 0 auto; 
+               
+              }
+        }
+        
+
+    }
+
+
+
+
+
+}
