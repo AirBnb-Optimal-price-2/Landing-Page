@@ -443,18 +443,21 @@ footer {
 }
 .about-container .leadershipcont .leadership {
   margin: 0 auto;
+  height: 460.5px;
   width: 45%;
   margin: 5px;
   border: 1px solid #ccc;
 }
 @media (max-width: 500px) {
   .about-container .leadershipcont .leadership {
+    height: 0 auto;
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (max-width: 850px) {
   .about-container .leadershipcont .leadership {
+    height: 0 auto;
     width: 100%;
     margin: 0 auto;
   }
