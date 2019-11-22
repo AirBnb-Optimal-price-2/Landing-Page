@@ -417,10 +417,6 @@ footer {
 .about-container .about-content-section p {
   text-align: center;
 }
-.about-container .about-content-section .guest1 {
-  border-radius: 40%;
-  margin-bottom: 5%;
-}
 @media (max-width: 850px) {
   .about-container .about-content-section {
     width: 100%;
@@ -456,6 +452,10 @@ footer {
   margin: 5px;
   border: 1px solid #ccc;
 }
+.about-container .leadershipcont .leadership h5 {
+  font-size: 2.3rem;
+  color: black;
+}
 @media (max-width: 500px) {
   .about-container .leadershipcont .leadership {
     padding: 1%;
@@ -471,10 +471,6 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
-}
-.about-container .leadershipcont .leadership h5 {
-  font-size: 2.3rem;
-  color: black;
 }
 .about-container .leadershipcont div.leadership:hover {
   border: 1px solid #777;
